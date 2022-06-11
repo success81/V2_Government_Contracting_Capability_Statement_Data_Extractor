@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<style>
+		body {
+			background-image: url('https://storage.googleapis.com/osdbushare/Background_Website.jpg');
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-position: center;
+		  }
+		</style>
+	</head>
+<div>
+	<body>
+		<br></br>
+		<h1>NAICS Codes</h1>
+		{% print (data[8]) %}
+		<br></br>
+		<h1>Certifications</h1>
+		<h3>EDWOSB:</h3> {% print (data[0]) %}
+		<h3>WOSB:</h3> {% print (data[1]) %}
+		<h3>SDB:</h3> {% print (data[2]) %}
+		<h3>8(a):</h3> {% print (data[3]) %}
+		<h3>HUBZone:</h3> {% print (data[4]) %}
+		<h3>SDVOB:</h3> {% print (data[5]) %}
+		<h3>VOSB:</h3> {% print (data[6]) %}
+		<h3>ANC:</h3> {% print (data[7]) %}
+
+		
+		<br></br>
+		<h1>Extracted Capability Statement Text</h1>
+		{% print (data[9]) %}
+	</body>
+</div>
+</html>
