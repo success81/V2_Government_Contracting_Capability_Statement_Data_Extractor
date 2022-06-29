@@ -21,6 +21,7 @@ def home():
 
 
 
+    #Code to create temp file directory \tmp is the temp file directory
     if request.method == 'POST':
         fname = request.files["myfile"]
         #fname.save(secure_filename(fname.filename))
@@ -30,7 +31,7 @@ def home():
         #file_path = os.path.join('temp_files', filename)
         fname.save(file_path)
 
-    #Code to take in document
+    #Code to assign PDF
     #fname ='FDT.pdf'
     doc = fitz.open(file_path)  
     text = ''
