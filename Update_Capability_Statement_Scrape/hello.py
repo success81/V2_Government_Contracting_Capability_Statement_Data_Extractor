@@ -20,7 +20,7 @@ def index():
 def home():
 
 
-
+    #Change to self-deleting file once processing is done
     #Code to create temp file directory \tmp is the temp file directory
     if request.method == 'POST':
         fname = request.files["myfile"]
